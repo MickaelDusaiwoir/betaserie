@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr_BE">
+    <head>
+        <meta charset="UTF-8">
+        <title>BetaSeries</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!--[if lt IE 9]>
+            <scrypt src="http://html5shiv.googlecode.com/svn/trunk/html5.js" defer"defer"></scrypt>
+        <![endif]-->
+    </head>
+    <body>
+        <div id="content">
+            <div id="appli">
+                <nav>
+                    <ul id="menu">
+                        <li class="actif">
+                            <a href="javascript:void(0);" rel="recherche" data-toggle="tab">Recherche</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" rel="serie" data-toggle="tab">Mes s&eacute;ries</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" rel="planning" data-toggle="tab">Planning</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="vieuws">
+                    <div id="recherche" class="vieuw  actif">                        
+                        <form action="javascript:void(0)" method="post">
+                            <input type="text" name="serie" placeholder="Rechercher une s&eacute;rie" />
+                        </form>
+                        <h3>
+                            Recherche
+                        </h3>
+                        <p>Aucune s&eacute;rie n'a &eacute;t&eacute; trouv&eacute;e</p>
+                        <p class="erreur">Le terme doit avoir au moins 2 caract&egrave;res</p>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);"></a>
+                            </li>
+                        </ul>                        
+                    </div>
+                    <div id="serie" class="vieuw">
+                        <h3>
+                            Série
+                        </h3>
+                        <div id="mesSeries">
+                            <p>Vous ne suivez aucune série</p>
+                        </div>
+                    </div>
+                    <div id="planning" class="vieuw">
+                        <h3>
+                            Planning
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
